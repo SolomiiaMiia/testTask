@@ -1,0 +1,32 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "first test",
+  "main": "index.js",
+  "dependencies": {
+    "chromedriver": "^90.0.1",
+    "selenium-webdriver": "^4.0.0-beta.3",
+    "mocha": "^8.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.1.0",
+    "cypress": "^7.3.0",
+    "cypress-image-snapshot": "^4.0.1",
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha": "^8.4.0",
+    "mocha-junit-reporter": "^2.0.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  },
+  "scripts": {
+    "start": "node test.js",
+    "test": "cypress",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run ",
+    "cypress:open": "cypress open",
+    "cypress:report": "node config.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
